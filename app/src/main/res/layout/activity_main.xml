@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A15"
+    android:padding="14dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="MKTOID"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Unity Ads Self Clicking App"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="#1A1A2E"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dashboard (This Session)"
+                android:textColor="#00FF88"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Unity ID"
+                android:textColor="#AAAAAA" />
+
+            <TextView
+                android:id="@+id/tvUnityId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0000000"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Ad Watch"
+                android:textColor="#AAAAAA" />
+
+            <TextView
+                android:id="@+id/tvAdWatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I : 00   R : 00"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="eCPM Generator"
+                android:textColor="#AAAAAA" />
+
+            <TextView
+                android:id="@+id/tvEcpm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22¢ - 26¢"
+                android:textColor="#00FF88"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="#1A1A2E"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="VPN / PROXY INFO"
+                    android:textColor="#00FF88"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Connected"
+                    android:textColor="#00FF88"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="US   |   IP: 72.52.87.195"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/etProxy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#000000"
+                android:hint="Proxy ip:port (optional)"
+                android:padding="8dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#777777"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvFullPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="#1A1A2E"
+            android:padding="12dp"
+            android:text="Full Ad Price : 0.1600$"
+            android:textColor="#00FF88"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSkipPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="#1A1A2E"
+            android:padding="12dp"
+            android:text="Skip Ad Price : 0.0220$"
+            android:textColor="#00FF88"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnWatchAd"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#00FF88"
+            android:text="Skip Ad - Watch"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Loading Ad.."
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnDownloadApk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#2E2E4E"
+            android:text="Download APK"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Patches Activation"
+            android:textColor="#00FF88"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvLogs"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="6dp"
+            android:background="#000000"
+            android:fontFamily="monospace"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            android:textColor="#00FF88"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+</ScrollView>
